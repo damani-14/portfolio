@@ -1,1 +1,1 @@
-workspace for web design
+workspace for prototyping
