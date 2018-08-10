@@ -1,0 +1,24 @@
+.main-div {
+  background-color: white;
+  padding: 20px;
+}
+
+.main-div h1{
+  color: #00cc66;
+}
+
+.nav-button {
+
+}
+
+.top-buff {
+  height:100px;
+}
+
+.buffer {
+  height:500px;
+}
+
+.display h1{
+color: #00cc66;  
+}
