@@ -1,0 +1,44 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>ArcGIS DevLabs: JavaScript Starter App</title>
+  <style>
+    html, body, #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.8/esri/css/main.css">
+  <script src="https://js.arcgis.com/4.8/"></script>
+
+  <script>
+    require([
+      "esri/WebMap",
+      "esri/views/MapView",
+      "dojo/domReady!"
+    ], function(WebMap, MapView) {
+
+      var webmap = new WebMap({
+        portalItem: {
+          id: "31ecbf8722e34432bce8d92d0564259b"
+        }
+      });
+
+      var view = new MapView({
+        container: "viewDiv",
+        map: webmap,
+        center: [-118.71511,34.09042],
+        zoom: 10
+      });
+
+    });
+  </script>
+</head>
+<body>
+  <div id="viewDiv"></div>
+</body>
+</html>
